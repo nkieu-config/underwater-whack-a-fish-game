@@ -1,12 +1,12 @@
-# 3D Underwater Axolotl Catching Game
+# Underwater Axolotl Catching Game
 
-An interactive 3D underwater game built with **Three.js**, where players catch axolotls while avoiding jellyfish.
+An interactive underwater game built with **Three.js**, where players catch axolotls while avoiding jellyfish.
 
 ---
 
 ## How to Play
 
-1. Open the **`Purple.html`** file in a web browser  
+1. Open the **`index.html`** file in a web browser  
 2. Click the **"Start"** button in the game controls panel.
 3. Use your **mouse** to click on **axolotls** to catch them and earn points.
 4. Avoid clicking on **jellyfish**, as they will reduce your health.

@@ -30,7 +30,7 @@ function main() {
 
   const textureLoader = new THREE.TextureLoader();
   const backgroundImage = textureLoader.load(
-    "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/7cd3f552-bb67-410f-84f2-3f581a66db86/de73wrn-cede53b5-df6d-4ae0-9272-d45f3b942ed2.jpg/v1/fill/w_1920,h_1059,q_75,strp/underwater_city_by_annemaria48_de73wrn-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTA1OSIsInBhdGgiOiJcL2ZcLzdjZDNmNTUyLWJiNjctNDEwZi04NGYyLTNmNTgxYTY2ZGI4NlwvZGU3M3dybi1jZWRlNTNiNS1kZjZkLTRhZTAtOTI3Mi1kNDVmM2I5NDJlZDIuanBnIiwid2lkdGgiOiI8PTE5MjAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.qE_IFOxhsjrkuO_ahip7lHZ_VGI3KmLwX6jTVO4pdRw"
+    "https://images.pexels.com/photos/2170473/pexels-photo-2170473.jpeg"
   );
   scene.background = backgroundImage;
 
@@ -110,7 +110,7 @@ function main() {
   let score = 0;
   let heart = 3;
   let stop = false;
-  let timeInSeconds = 16;
+  let timeInSeconds = 20;
 
   function playSound() {
     sound.currentTime = 0;
@@ -372,7 +372,10 @@ function main() {
     mouse.y = -(event.clientY / canvas.clientHeight) * 2 + 1;
 
     raycasterAxolotl.setFromCamera(mouse, camera);
-    const intersectsAxolotl = raycasterAxolotl.intersectObjects([axolotl], true);
+    const intersectsAxolotl = raycasterAxolotl.intersectObjects(
+      [axolotl],
+      true
+    );
 
     for (const intersect of intersectsAxolotl) {
       lastAxolotlPosition.copy(intersect.point);

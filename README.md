@@ -12,6 +12,12 @@ An interactive 3D underwater game where players **catch axolotls** and **avoid j
 
 ---
 
+## 📸 Screenshots
+
+<img src="public/screenshot.png" alt="Catch Screenshot" width="100%">
+
+---
+
 ## ✨ Game Highlights
 
 - 🎮 **Interactive Gameplay** – Catch axolotls with mouse clicks while avoiding jellyfish
